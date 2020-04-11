@@ -1,8 +1,9 @@
-#ifndef BOARD_H
-#define BOARD_H
+#ifndef H_BOARD
+#define H_BOARD
 
 #include <iostream>
 #include <time.h>
+#include "Weight.h"
 using namespace std;
 
 class Board
@@ -52,6 +53,7 @@ private:
 
   int m_grids[NUM_GRIDS];
   int m_score;
+  WeightManager m_weightManager; 	
 };
 
 #endif

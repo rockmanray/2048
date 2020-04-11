@@ -14,7 +14,7 @@ void Board::reset()
 	
 	m_grids[index1] = 2;
 	m_grids[index2] = 2;
-	
+		
 	return;
 }
 
