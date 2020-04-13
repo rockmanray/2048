@@ -4,6 +4,7 @@
 void Board::reset() 
 {
 	m_score = 0;
+	m_nMoves = 0;
 	srand(time(NULL));
 
 	int index1 = rand()%NUM_GRIDS;
@@ -21,7 +22,7 @@ void Board::reset()
 
 void Board::showBoard() 
 {
-	cout << "Score: " << m_score << endl;
+	cout << "#Moves: " << m_nMoves << ", Score: " << m_score << endl;
 	cout << "-------------------------" << endl;
 	for (int i=0; i<N_ROWS; i++) {
 		for (int j=0; j<N_COLUMNS; j++) {
@@ -228,6 +229,8 @@ bool Board::shift(Action action)
 			}
 		} 		
 	}
+		
+	++m_nMoves;
 		
 	return true;
 }

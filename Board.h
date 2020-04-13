@@ -53,6 +53,7 @@ private:
 
   int m_grids[NUM_GRIDS];
   int m_score;
+  int m_nMoves;
   WeightManager m_weightManager; 	
 };
 
